@@ -1,0 +1,27 @@
+$ d8 trigger_segfault.js 
+Received signal 11 SEGV_MAPERR 0d911e680140
+
+==== C stack trace ===============================
+
+ [0x558ffe45e674]
+ [0x7f1c245d7390]
+ [0x558ffe3bd2ef]
+[end of stack trace]
+Segmentation fault (core dumped)
+
+
+---------------------------------------------------
+
+gef➤  x/i $pc
+=> 0x558332b1e2ef <Builtins_ArrayPrototypeLastIndexOf+1359>:  mov    rcx,QWORD PTR [rbx+rcx*1+0xf]
+gef➤  job $rbx
+0x74079a80139: [FixedArray]
+ - map: 0x1020868807b9 <Map>
+ - length: 1
+           0: 1
+$2 = 0x0
+gef➤  i r $rcx
+rcx            0x7fff8  0x7fff8
+gef➤  x $rbx+$rcx*1+0xf
+   0x74079b00140: Cannot access memory at address 0x74079b00140
+
