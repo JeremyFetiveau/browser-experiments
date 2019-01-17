@@ -4,6 +4,8 @@ As for many other bugs in V8 builtins (C++ or [Code Stub Assembly](https://v8.de
 
 Unfortunately, this bug doesn't give any interesting exploitation primitive as this builtin merely returns an integer index.
 
+It seems that this bug is a variant of [another bug from august](https://bugs.chromium.org/p/chromium/issues/detail?id=878845).
+
 # The commit
 ```
 commit b8a911314d00e5c866399b58533a79bddce45fb6
