@@ -1,4 +1,4 @@
-This bug is in the [Torque](https://v8.dev/docs/torque) implementation of the builtin `Array.prototype.lastIndexOf`.
+This bug is in the [Torque](https://v8.dev/docs/torque) (also see [this talk](https://docs.google.com/presentation/d/1PlQEjS5xyJA-0GY8mjB4wr-pLyzFtdMRfhXczJJ2wic/edit#slide=id.g388aa7220e_2_46)) implementation of the builtin `Array.prototype.lastIndexOf`.
 
 As for many other bugs in V8 builtins (C++ or [Code Stub Assembly](https://v8.dev/docs/csa-builtins), there is an unexpected side effect due to the possibility of a JS callback using, in this case,  `[Symbol.toPrimitive]`.
 
