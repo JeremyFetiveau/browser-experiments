@@ -1,0 +1,8 @@
+// generated using --trace-opt --trace-representation
+[marking 0x35a0ae19dca1 <JSFunction opt_me (sfi = 0x35a0ae19da29)> for optimized recompilation, reason: small function, ICs with typeinfo: 8/8 (100%), generic ICs: 0/8 (0%)]
+[compiling method 0x35a0ae19dca1 <JSFunction opt_me (sfi = 0x35a0ae19da29)> using TurboFan]
+[ ... ]
+ visit #58: CheckBounds
+  change: #58:CheckBounds(@1 #36:NumberConstant)  from kRepTaggedSigned to kRepWord32:truncate-to-word32
+defer replacement #58:CheckBounds with #45:SpeculativeNumberBitwiseAnd
+[ ... ]
