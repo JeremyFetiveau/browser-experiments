@@ -11,3 +11,5 @@ function opt_me(b) {
 ```
 
 ![diagram](diagram.png)
+
+![graph](turbofan_range.png)
