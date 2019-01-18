@@ -21,10 +21,10 @@ During the `SimplifiedLoweringPhase`, when `CheckBounds` nodes are visited, if t
 
 In this case, when visiting the `CheckBounds`, the input is a constant `FixedArray[2]` (length is 2) and the index Range is `(0,1)`, which is in bounds. Therefore, the node is removed.
 
-### Before simplified lowering
+### Before simplified lowering
 
 ![before](with_checkbounds.png)
 
-### After simplified lowering
+### After simplified lowering
 
 ![after](removed_checkbounds.png)
