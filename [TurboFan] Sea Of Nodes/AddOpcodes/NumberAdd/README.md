@@ -1,5 +1,4 @@
 ```javascript
-numberadd
 let opt_me = (x) => {
   let y = x ? 10 : 20;
   return y + 1000000000000;
