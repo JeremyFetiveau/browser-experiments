@@ -9,4 +9,10 @@ opt_me(true);
 opt_me(false);
 ```
 
+# Before simplified lowering (typed lowering)
+
+![graph](speculativesafeintegeradd_typed_lowering.png)
+
+# Simplified lowering
+
 ![graph](int32add_simplified_lowering.png)
